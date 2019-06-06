@@ -10,6 +10,35 @@
         					
         				method：提交方式
         					常用：get、post（head、put、delete....）
+        				
+        				js事件编程：
+        					onsubmit事件：表示表单提交是否成功
+        						返回值是true：提交成功；false：提交失败
+        		get提交方式：（浏览器默认的提交方式）
+        			1）将用户信息提交到地址栏上
+        				后台服务器url？key1=value1&key2=value2...
+        			2）get提交的数据大小有限（不超过4KB）
+        			3）get方式不适合提交敏感数据，例如：密码
+        				密码提交方式：需要密码加密
+        						1）MD5加密：存在特点：如果两个密码相同，那么加密后的信息一样
+        						2）EE：SpringSecurity：Spring的安全框架
+        						
+        		post提交方式：
+        			1）数据不会提交到地址栏
+        					请求行：
+        					Post uri:/hello  HTTP1.1（可反复向服务器发送请求）
+        					请求头：
+        					User-aget:字符串（当前使用的浏览器类型。。。）
+        					cookie:字符串
+        					FormDate:实体内容
+        					http网络协议
+        						一堆服务器响应头信息
+        						浏览器请求头信息
+        						
+        						实体内容：formdata
+        						key1=value1&key2=value2&...
+        			2）提交数据大小没有限制
+        			3）适合敏感数据（密码需要特定加密）
         -->
 	</head>
 	<form action="#" method="get">

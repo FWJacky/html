@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS盒子模型</title>
+	<style>
+		div{
+			width: 200px;
+			height: 200px;
+			
+			/*边框的style、color、width的简写方式的顺序为：上 右 下 左*/
+			
+			/*必须在设置了盒子的边框属性后才能显示出盒子的样式*/
+			/*dashed：虚线*/
+			/*border-top-style: dashed;*/
+			/*double：双实线*/
+			/*border-left-style: double;*/
+			/*solid：单实线*/
+			/*border-right-style: solid;*/
+			/*dotted：原点*/
+			/*border-bottom-style: dotted;*/
+			/*边框style的简写方式*/
+			/*border-style: dotted;*/
+			
+			/*border-top-color: #FF0000;
+			border-left-color: #00FF00;
+			border-right-color: #CC9900;
+			border-bottom-color: #808080;*/
+			/*边框颜色简写方式*/
+			/*border-color:#FF0000 #CC9900 #808080 #00FF00;*/
+			
+			/*border-top-width: 10px;
+			border-left-width: 20px;
+			border-right-width: 30px;
+			border-bottom-width: 40px;*/
+			/*边框宽度的简写方式*/
+			/*border-width: 10px;*/
+			
+			/*边框的简写方式
+			 border:border-width border-style border-color*/
+			border:1px solid black;
+		}
+		#div1{
+			background-color: #00FF00;
+			/*float: left;*/
+			padding: 10px;
+			margin: 10px;
+		}
+		#div2{
+			background-color: #808080;
+			/*float: left;*/
+		}
+		#div3{
+			background-color: #CC9900;
+			/*float: left;*/
+		}
+	</style>
+	</head>
+	<body>
+		<div id="div1">div1</div>
+		<div id="div2">div2</div>
+		<div id="div3">div3</div>
+	</body>
+</html>
