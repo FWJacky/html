@@ -1,0 +1,67 @@
+body{
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+}
+.container-header{
+	padding: 0px 15px;
+}
+.col-header{
+	padding: 0px 15px;
+}
+.col-1{
+	width: 600px;
+	position: relative;
+	min-height: 1px;
+	padding: 0px 15px;
+	float: left;
+}
+.col-2{
+	width: 767px;
+	position: relative;
+	min-height: 1px;
+	padding: 0px 15px;
+	float: left;
+}
+.col-3{
+	width: 400px;
+	float: left;
+	position: relative;
+	min-height: 1px;
+	padding-top:20px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.list-line{
+	margin-left: -5px;
+	padding: 0px;
+}
+ol,ul{
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+li{
+	display: inline;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.clear{
+	clear: both;
+}
+.col-header{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.col-4{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.list-line1{
+	font-size: 20px;
+	padding-left: 0px;
+	margin-top: 10px;
+	background-color: black;
+}
+.li{
+}
