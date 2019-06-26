@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>自定义对象</title>
+	<script>
+		/**
+		 * 自定义对象和函数定义格式是一样的
+		 * 
+		 * 方式1：有参构造形式
+		 *	1)定义一个对象
+		 *		function 对象(属性) {
+		 * 			追加属性;
+		 * 			追加方法;
+		 * 		}
+		 *
+		 *	2)创建对象
+		 *		var 对象名 = new 对象(实际参数);
+		 *
+		 *	3)使用对象
+		 *		对象名.属性/.方法名();
+		 */
+		
+		//定义Person对象
+//		function Person(name,age) {
+			//赋值
+//			this.name = name;
+//			this.age = age;
+//			
+//			//追加方法
+//			this.speak=function() {
+//				alert("调用了speak方法。。。");
+//			}
+//		}
+		
+		//创建对象
+//		var person = new Person("张三",20);
+		
+		//方式2：无参构造形式
+//		function Person() {}
+//		//创建对象
+//		var person = new Person();
+//		//追加属性
+//		person.name = "李四";
+//		person.age = 21;
+//		
+//		//方式3：利用Object对象，代表所有对象的模板
+//		var person = new Object();
+//		//追加属性
+//		person.name = "王五";
+//		person.age = 22;
+//		//追加方法
+//		person.speak=function(){
+//			alert("调用了王五说话的功能。。。");
+//		}
+		
+		//方式4：json格式（字面值的形式）
+		/**
+		 * json解析xml文件：
+		 *		原生jsonlib
+		 *		GSON
+		 *		FastJson/
+		/**
+		 * {"key":value}          {"name":"张三","age":20,...} :简单的String类型
+		 *						  {"map":{"key":value}}
+		 */
+		var person = {
+			"name":"赵六",
+			"age":2,
+			"speak":function(){
+				alert("调用了赵六说话功能。。。");
+			}
+		};
+		
+		person.speak();
+		document.write("姓名是："+person.name+"<br />");
+		document.write("年龄是："+person.age+"<br />");
+	</script>
+	</head>
+	<body>
+	</body>
+</html>
