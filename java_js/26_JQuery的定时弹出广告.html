@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JQuery的定时弹出和隐藏广告</title>
+	</head>
+	<script src="js/jquery-1.11.0.js"></script>
+	<script>
+		
+		function showAdv(){
+			$("#img1").slideDown(3000);
+			setTimeout("hideAdv()",5000);
+		}
+		
+		function hideAdv(){
+			$("#img1").slideUp(3000);
+		}
+		//页面载入
+		$(function(){
+			
+			//仅执行一次定时器 
+			setTimeout("showAdv()",3000);
+		})
+	</script>
+	<body>
+		<img src="img/01.gif" id="img1" style="display: none;" onblur="showAdv()" on/>
+	</body>
+</html>
